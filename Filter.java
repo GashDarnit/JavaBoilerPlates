@@ -15,6 +15,9 @@ class Filter {
         boolean start = false;
         boolean match = false;
         int index = 0;
+        
+        if(queue.length < name.length()) return false;
+        
         for (char i : name.toCharArray()) {
             if(i == queue[0]) start = true;
             
